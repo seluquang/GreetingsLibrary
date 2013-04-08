@@ -7,6 +7,7 @@
 //
 
 #import "GrettingsLibrary.h"
+#import "JSONKit.h"
 
 @implementation GrettingsLibrary
 
@@ -17,8 +18,7 @@
                                        name, @"Name",
                                        nil];
     
-//    NSString *greetsJsonString = [greetsJson JSONString];
-    NSString *greetsJsonString = @"HEHEHEHE!";
+    NSString *greetsJsonString = [greetsJson JSONString];
     NSLog(@"%@", greetsJsonString);
 }
 

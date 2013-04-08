@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74013C5B1712783600F4F36B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 74013C591712783600F4F36B /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		74C799101712728500893DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C7990F1712728500893DBE /* Foundation.framework */; };
 		74C799151712728500893DBE /* GrettingsLibrary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 74C799141712728500893DBE /* GrettingsLibrary.h */; };
 		74C799171712728500893DBE /* GrettingsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C799161712728500893DBE /* GrettingsLibrary.m */; };
@@ -26,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		74013C571712783600F4F36B /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		74013C581712783600F4F36B /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		74013C591712783600F4F36B /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		74013C5A1712783600F4F36B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		74C7990C1712728500893DBE /* libGrettingsLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGrettingsLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C7990F1712728500893DBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		74C799131712728500893DBE /* GrettingsLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrettingsLibrary-Prefix.pch"; sourceTree = "<group>"; };
@@ -45,10 +50,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74013C551712773C00F4F36B /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				74013C561712783600F4F36B /* JSONKit */,
+			);
+			name = Submodules;
+			sourceTree = "<group>";
+		};
+		74013C561712783600F4F36B /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				74013C571712783600F4F36B /* CHANGELOG.md */,
+				74013C581712783600F4F36B /* JSONKit.h */,
+				74013C591712783600F4F36B /* JSONKit.m */,
+				74013C5A1712783600F4F36B /* README.md */,
+			);
+			name = JSONKit;
+			path = Submodules/JSONKit;
+			sourceTree = "<group>";
+		};
 		74C799031712728500893DBE = {
 			isa = PBXGroup;
 			children = (
 				74C799111712728500893DBE /* GrettingsLibrary */,
+				74013C551712773C00F4F36B /* Submodules */,
 				74C7990E1712728500893DBE /* Frameworks */,
 				74C7990D1712728500893DBE /* Products */,
 			);
@@ -140,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74C799171712728500893DBE /* GrettingsLibrary.m in Sources */,
+				74013C5B1712783600F4F36B /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +269,7 @@
 				74C7991C1712728500893DBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
