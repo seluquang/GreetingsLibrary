@@ -13,12 +13,11 @@
 
 -(void)chrismasGreetingWithName:(NSString *)name
 {
-    NSMutableDictionary *greetsJson = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
-                                       @"Merry XMas", @"Greeting",
-                                       name, @"Name",
-                                       nil];
+    NSMutableDictionary *nameElements = [NSMutableDictionary dictionary];
+    [nameElements setObject:@"Merry Xmas" forKey:@"Greeting"];
+    [nameElements setObject:name forKey:@"Name"];
     
-    NSString *greetsJsonString = [greetsJson JSONString];
+    NSString *greetsJsonString = [nameElements JSONString];
     NSLog(@"%@", greetsJsonString);
 }
 
