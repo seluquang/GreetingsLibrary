@@ -10,4 +10,16 @@
 
 @implementation GrettingsLibrary
 
+-(void)chrismasGreetingWithName:(NSString *)name
+{
+    NSMutableDictionary *greetsJson = [[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                       @"Merry XMas", @"Greeting",
+                                       name, @"Name",
+                                       nil];
+    
+//    NSString *greetsJsonString = [greetsJson JSONString];
+    NSString *greetsJsonString = @"HEHEHEHE!";
+    NSLog(@"%@", greetsJsonString);
+}
+
 @end

@@ -10,4 +10,6 @@
 
 @interface GrettingsLibrary : NSObject
 
+-(void)chrismasGreetingWithName:(NSString *)name;
+
 @end
